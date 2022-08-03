@@ -8,12 +8,12 @@
  *
  * @author Santiago López
  */
-public class Horas_min_seg extends javax.swing.JFrame {
+public class Hours_min_secs extends javax.swing.JFrame {
 
     /**
      * Creates new form Hora_min_seg
      */
-    public Horas_min_seg() {
+    public Hours_min_secs() {
         initComponents();
     }
 
@@ -41,26 +41,26 @@ public class Horas_min_seg extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setText("Horas - Minutos y Segundos");
+        jLabel1.setText("Hours - Minutes and Seconds");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel2.setText("Ingrese la cantidad de días:");
+        jLabel2.setText("Insert the amount of days:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 230, -1));
 
         jDays.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         getContentPane().add(jDays, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 96, 70, 30));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel3.setText("Horas:");
+        jLabel3.setText("Hours:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, 20));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel4.setText("Minutos:");
+        jLabel4.setText("Minutes:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 80, 20));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel5.setText("Segundos:");
+        jLabel5.setText("Seconds:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 90, 20));
 
         jHours.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -73,7 +73,7 @@ public class Horas_min_seg extends javax.swing.JFrame {
         getContentPane().add(jSec, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 200, 20));
 
         jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton1.setText("Calcular");
+        jButton1.setText("Calculate");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -86,20 +86,20 @@ public class Horas_min_seg extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     
-        // Calcula valores necesarios
+        // Declares the needed values
         int secDay = (60*60)*24;
         int minDay = 60*24;
         int hoursDay = 24;
         
-        // Toma el valor entero del jSpinner
+        // Get the Integer value of the jSpinner
         int days = (Integer) jDays.getValue();
         
-        // Hace los calculos
+        // Makes the calculation
         int hours = days*hoursDay;
         int minutes = days*minDay;
         int seconds = days*secDay;
         
-        // Asigna los valores calculados a los jLabels correspondientes
+        // Assign the values to the corresponding Jlabels
         jHours.setText(""+hours);
         jMin.setText(""+minutes);
         jSec.setText(""+seconds);
@@ -124,13 +124,13 @@ public class Horas_min_seg extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Horas_min_seg.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Hours_min_secs.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Horas_min_seg.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Hours_min_secs.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Horas_min_seg.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Hours_min_secs.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Horas_min_seg.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Hours_min_secs.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -138,7 +138,7 @@ public class Horas_min_seg extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Horas_min_seg().setVisible(true);
+                new Hours_min_secs().setVisible(true);
             }
         });
     }
