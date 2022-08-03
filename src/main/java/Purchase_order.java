@@ -58,11 +58,11 @@ public class Purchase_order extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jLabel5.setText("Orden de Compra");
+        jLabel5.setText("Purchase Order (PO)");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel6.setText("Cliente:");
+        jLabel6.setText("Client:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 66, -1, -1));
 
         nameFld.addActionListener(new java.awt.event.ActionListener() {
@@ -73,23 +73,23 @@ public class Purchase_order extends javax.swing.JFrame {
         getContentPane().add(nameFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 100, -1));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel1.setText("Producto");
+        jLabel1.setText("Product");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel2.setText("Valor Unitario");
+        jLabel2.setText("Unit Value");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel3.setText("Cantidad");
+        jLabel3.setText("Quantity");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel4.setText("Valor Total");
+        jLabel4.setText("Total Value");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 290, -1, -1));
 
         jNmrslt.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jNmrslt.setText("Señor(a) _, el total de su compra es: ");
+        jNmrslt.setText("Dear _, the total of your order is: ");
         getContentPane().add(jNmrslt, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 100, -1));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 98, -1));
@@ -121,13 +121,13 @@ public class Purchase_order extends javax.swing.JFrame {
         getContentPane().add(jTotal2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 120, -1));
 
         jLabel7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel7.setText("Valor Total");
+        jLabel7.setText("Total Value");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, -1, -1));
 
         jTotal3.setEditable(false);
         getContentPane().add(jTotal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 120, -1));
 
-        calcBtn.setText("CALCULAR");
+        calcBtn.setText("CALCULATE");
         calcBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calcBtnActionPerformed(evt);
@@ -168,7 +168,7 @@ public class Purchase_order extends javax.swing.JFrame {
         jTotal.setText("$"+total);
         
         String name = nameFld.getText();
-        jNmrslt.setText("Señor(a) " + name + ", el total de su compra es: $" + total);
+        jNmrslt.setText("Dear " + name + ", the total of your purchase is: $" + total);
     }//GEN-LAST:event_calcBtnActionPerformed
 
     private void jTotal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTotal1ActionPerformed
